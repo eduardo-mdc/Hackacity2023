@@ -34,7 +34,7 @@ with open(csv_file, 'w', newline='') as file:
     # Write the data
     for entry in all_data:
         # Extract values for each key
-        row = [field['value'] if 'value' in field else '' for field in entry.values()]
+        row = [field['value'] if isinstance(field, dict) and 'value' in field else field for field in entry.values()]
         writer.writerow(row)
 
 print(f"CSV file '{csv_file}' created successfully.")
