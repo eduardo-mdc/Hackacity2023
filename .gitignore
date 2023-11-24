@@ -1,0 +1,19 @@
+# Ignore datasets and CSV files
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+*.sqlite
+*.db
+*.h5
+*.nc
+*.pkl
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.rar
+*.7z
